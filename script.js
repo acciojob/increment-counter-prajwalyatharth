@@ -6,7 +6,7 @@ let counterElement = document.getElementById("counter");
 incrementButton.addEventListener("click", function () {
     let currentValue = parseInt(counterElement.innerText); // Get current counter value
 
-    alert("Current value before increment: " + currentValue); // Alert un-incremented value
+    alert(currentValue); // Alert only the number (no extra text)
 
     counterElement.innerText = currentValue + 1; // Increment counter
 });
